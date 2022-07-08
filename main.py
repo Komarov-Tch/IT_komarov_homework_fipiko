@@ -47,8 +47,9 @@ def timetable():
 
 @app.route('/adress')
 def adress():
-    adress_info = {"user_name": 'Егор'}
-    return render_template('adress.html', title='Где мы находимся', user=adress_info)
+    adress_info = {'adress': 'г.Норильк, ул.50 лет Октября, д.10',
+                   'map': '../static/img/way_to_сube.jpg'}
+    return render_template('adress.html', title='Где мы находимся', adress=adress_info)
 
 
 @app.route('/contacts')

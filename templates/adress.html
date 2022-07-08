@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-        <h1>Карта от яндекса</h1>
+<div class="card">
+<img src={{ adress.map }} class="card-img-top" alt="Дорога в IT-cube">
+<div class="card-body">
+<h5 class="card-title">Мы находимся ТУТ ^</h5>
+<p class="card-text">{{ adress.adress }}</p>
+</div>
+</div>
 
 {% endblock %}
 
