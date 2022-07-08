@@ -17,27 +17,27 @@
           <tbody>
             <tr>
               <th scope="row">12:00 - 13:45</th>
-              <td>PY-1/22-1</td>
-              <td>PYJ-1/22-2</td>
-              <td>PY-2/22-5</td>
+              {% for st in timetable.line1 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <th scope="row">14:00 - 15:45</th>
-              <td>PY-3/22-2</td>
-              <td>PY-1/21-4</td>
-              <td>PY-3/22-1</td>
+              {% for st in timetable.line2 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
               <tr>
               <th scope="row">16:00 - 17:45</th>
-              <td>PY-3/22-5</td>
-              <td>PY-5/20-2</td>
-              <td>PY-3/22-1</td>
+              {% for st in timetable.line3 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <th scope="row">18:00 - 19:45</th>
-              <td>Yandex - 2</td>
-              <td>Yandex - 3</td>
-              <td>Yandex - 1</td>
+              {% for st in timetable.line4 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
           </tbody>
           <thead>
@@ -51,27 +51,27 @@
           <tbody>
             <tr>
               <th scope="row">12:00 - 13:45</th>
-              <td>PY-1/22-1</td>
-              <td>PYJ-1/22-2</td>
-              <td>PY-2/22-5</td>
+              {% for st in timetable.line1 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <th scope="row">14:00 - 15:45</th>
-              <td>PY-3/22-2</td>
-              <td>PY-1/21-4</td>
-              <td>PY-3/22-1</td>
+              {% for st in timetable.line2 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
               <tr>
               <th scope="row">16:00 - 17:45</th>
-              <td>PY-3/22-5</td>
-              <td>PY-5/20-2</td>
-              <td>PY-3/22-1</td>
+              {% for st in timetable.line3 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <th scope="row">18:00 - 19:45</th>
-              <td>Yandex - 2</td>
-              <td>Yandex - 3</td>
-              <td>Yandex - 1</td>
+              {% for st in timetable.line4 %}
+              <td>{{ st }}</td>
+              {% endfor %}
             </tr>
           </tbody>
         </table>

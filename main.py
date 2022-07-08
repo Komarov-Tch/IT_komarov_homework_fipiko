@@ -38,8 +38,11 @@ def index():
 
 @app.route('/timetable')
 def timetable():
-    timetable_info = {"user_name": 'Егор'}
-    return render_template('timetable.html', title='Расписание', user=timetable_info)
+    timetable_info = {'line1': ['PY-1/22-1', 'PYJ-1/22-2', 'PY-2/22-5'],
+                      'line2': ['PY-3/22-2', 'PY-1/21-4', 'PY-3/22-1'],
+                      'line3': ['PY-3/22-5', 'PY-5/20-2', 'PY-3/22-1'],
+                      'line4': ['Yandex-2', 'Yandex-3', 'Yandex-1']}
+    return render_template('timetable.html', title='Расписание', timetable=timetable_info)
 
 
 @app.route('/adress')
