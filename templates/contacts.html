@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-        <h1>Список контактов</h1>
-
+<div class="container">
+    <div class="container">
+        <h1> Список контактов </h1>
+    </div>
+    <div class="list-group">
+        {% for contact in contacts.con %}
+        <a href="#" class="list-group-item list-group-item-action">{{ contact }}</a>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
 

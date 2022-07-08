@@ -54,8 +54,11 @@ def adress():
 
 @app.route('/contacts')
 def contacts():
-    contacts_info = {"user_name": 'Егор'}
-    return render_template('contacts.html', title='Контакты', user=contacts_info)
+    contacts_info = {'con': ['https://vk.com/itcube.norilsk',
+                             'https://kvantorium-norilsk.ru/',
+                             '+79139999999',
+                             '+79999999999']}
+    return render_template('contacts.html', title='Контакты', contacts=contacts_info)
 
 
 def main():
