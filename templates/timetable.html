@@ -2,80 +2,83 @@
 
 {% block content %}
 <div class="container">
-<div class="row g-3">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <div class="col-8">
-              <th class="col-2">Время</th>
-              <th class="col-2">Понедельник</th>
-              <th class="col-2">Вторник</th>
-              <th class="col-2">Среда</th>
-              </div>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">12:00 - 13:45</th>
-              {% for st in timetable.line1 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <th scope="row">14:00 - 15:45</th>
-              {% for st in timetable.line2 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-              <tr>
-              <th scope="row">16:00 - 17:45</th>
-              {% for st in timetable.line3 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <th scope="row">18:00 - 19:45</th>
-              {% for st in timetable.line4 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-          </tbody>
-          <thead>
-            <tr>
-              <th class="col-2">Время</th>
-              <th class="col-2">Четверг</th>
-              <th class="col-2">Пятница</th>
-              <th class="col-2">Суббота</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">12:00 - 13:45</th>
-              {% for st in timetable.line1 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <th scope="row">14:00 - 15:45</th>
-              {% for st in timetable.line2 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-              <tr>
-              <th scope="row">16:00 - 17:45</th>
-              {% for st in timetable.line3 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <th scope="row">18:00 - 19:45</th>
-              {% for st in timetable.line4 %}
-              <td>{{ st }}</td>
-              {% endfor %}
-            </tr>
-          </tbody>
-        </table>
-        </div>
+    <div class="container">
+        <h1> Расписание </h1>
+    </div>
+  <div class="row g-3">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <div class="col-8">
+          <th class="col-2">Время</th>
+          <th class="col-2">Понедельник</th>
+          <th class="col-2">Вторник</th>
+          <th class="col-2">Среда</th>
+          </div>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">12:00 - 13:45</th>
+          {% for st in timetable.line1 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">14:00 - 15:45</th>
+          {% for st in timetable.line2 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">16:00 - 17:45</th>
+          {% for st in timetable.line3 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 19:45</th>
+          {% for st in timetable.line4 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="col-2">Время</th>
+          <th class="col-2">Четверг</th>
+          <th class="col-2">Пятница</th>
+          <th class="col-2">Суббота</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">12:00 - 13:45</th>
+          {% for st in timetable.line1 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">14:00 - 15:45</th>
+          {% for st in timetable.line2 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">16:00 - 17:45</th>
+          {% for st in timetable.line3 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 19:45</th>
+          {% for st in timetable.line4 %}
+          <td>{{ st }}</td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 {% endblock %}
 
